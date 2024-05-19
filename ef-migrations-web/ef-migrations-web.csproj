@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ef-migrations-models\ef-migrations-models.csproj" />
+    <ProjectReference Include="..\ef-migrations\ef-migrations.csproj" />
   </ItemGroup>
 
   <ItemGroup>
