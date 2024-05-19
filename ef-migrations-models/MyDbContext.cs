@@ -21,6 +21,9 @@ public class Blog
     [MaxLength(256)]
     public required string SubTitle { get; set; }
 
+    [MaxLength(8000)]
+    public string? Content { get; set; }
+
     [Required]
     public DateTime DateTimeAdd { get; set; }
 }
@@ -30,7 +33,7 @@ public class MyDbContext : DbContext
     public MyDbContext(DbContextOptions<MyDbContext> options) : base(options)
     {
     }
-    
+
     public DbSet<Blog> Blogs { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
