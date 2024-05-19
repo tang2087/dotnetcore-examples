@@ -27,21 +27,11 @@ public class Blog
 
 public class MyDbContext : DbContext
 {
-    private readonly string dbFilePath;
-
-    public MyDbContext(string dbFilePath = "TestDatabase.db") => this.dbFilePath = dbFilePath;
+    public MyDbContext(DbContextOptions<MyDbContext> options) : base(options)
+    {
+    }
     
     public DbSet<Blog> Blogs { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        optionsBuilder.UseSqlite($"Filename={this.dbFilePath}", options =>
-        {
-            options.MigrationsAssembly(Assembly.GetExecutingAssembly().FullName);
-        });
-
-        base.OnConfiguring(optionsBuilder);
-    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ef-migrations-models", "ef-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ef-migrations-web", "ef-migrations-web\ef-migrations-web.csproj", "{5137C78E-A82A-4EF7-93E8-752FD7123386}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ef-migrations", "ef-migrations\ef-migrations.csproj", "{B9FB612F-9AD0-4BFE-902B-4BE7121958DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,12 @@ Global
 		{5137C78E-A82A-4EF7-93E8-752FD7123386}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5137C78E-A82A-4EF7-93E8-752FD7123386}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{5137C78E-A82A-4EF7-93E8-752FD7123386}.Debug|x64.Build.0 = Debug|Any CPU
+		{B9FB612F-9AD0-4BFE-902B-4BE7121958DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9FB612F-9AD0-4BFE-902B-4BE7121958DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9FB612F-9AD0-4BFE-902B-4BE7121958DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9FB612F-9AD0-4BFE-902B-4BE7121958DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9FB612F-9AD0-4BFE-902B-4BE7121958DE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B9FB612F-9AD0-4BFE-902B-4BE7121958DE}.Debug|x64.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
